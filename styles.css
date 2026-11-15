@@ -1,0 +1,44 @@
+/* Stay Wild Stay Free Outdoors — shared draft styles */
+:root{--bg:#14170f;--card:#1f2417;--ink:#efeadb;--mute:#b3ad98;--acc:#c9822b}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.55 system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.draft{background:var(--acc);color:#111;text-align:center;padding:8px 12px;font-weight:700;font-size:14px}
+.nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 8px;padding:12px 20px;max-width:760px;margin:auto}
+.nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px;padding:8px 10px;border-radius:8px}
+.nav a:hover{color:var(--acc)}
+.nav a[aria-current="page"]{color:#111;background:var(--acc)}
+section,header.page{padding:40px 20px;max-width:760px;margin:auto}
+h1,h2{line-height:1.15}
+h2{color:var(--acc);text-transform:uppercase;letter-spacing:.06em;font-size:1.3rem}
+h3{margin:0 0 8px;font-size:1.15rem}
+.hero{text-align:center;padding:30px 20px 40px;max-width:760px;margin:auto}
+.hero img,.brand-mark img{width:min(320px,80%);height:auto}
+.brand-mark{text-align:center;padding:24px 20px 0;max-width:760px;margin:auto}
+.brand-mark img{width:min(160px,50%)}
+.btn{display:inline-block;background:var(--acc);color:#111;padding:12px 20px;border-radius:8px;font:inherit;font-weight:700;text-decoration:none;margin:6px 4px;border:0;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--acc)}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border-radius:10px;overflow:hidden;color:inherit;text-decoration:none;display:block;padding:0}
+.card img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover;background:#2a3122}
+.card span{display:block;padding:10px 12px;font-size:15px}
+.box{background:var(--card);border-radius:10px;padding:16px}
+.code{font-size:clamp(1.15rem,4.5vw,1.8rem);font-weight:800;color:var(--acc);letter-spacing:.06em;overflow-wrap:anywhere}
+.codes{grid-template-columns:1fr}
+.code-card{display:flex;flex-direction:column;gap:8px}
+.code-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:4px 0}
+.code-row .btn{margin:0;min-height:44px}
+.code-card .shop{margin:8px 0 0;align-self:flex-start;min-height:44px}
+table{width:100%;border-collapse:collapse}
+td{padding:8px 0;border-bottom:1px solid #333}
+td:last-child{text-align:right;font-weight:700}
+td.date{font-weight:400;color:var(--mute);font-size:14px;text-align:right;white-space:nowrap}
+.small{color:var(--mute);font-size:14px}
+a{color:var(--acc)}
+footer{text-align:center;padding:30px 20px;color:var(--mute);font-size:14px}
+.gear-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.gear-list li{background:var(--card);border-radius:10px;padding:14px 16px}
+.gear-list strong{display:block;margin-bottom:4px}
+.note{margin-top:8px}
+.offer-list,.plain-list{padding-left:1.2em}
+.offer-list li,.plain-list li{margin:8px 0}
